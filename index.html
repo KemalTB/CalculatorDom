@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <div id="memory"></div>
+            <div id="current">0</div>
+        </div>
+        <div class="keys">
+
+            <button class="function on-ac" onclick="turnOn()">ON/AC</button>
+            <p></p>
+            <button class="function off" onclick="turnOff()">OFF</button>
+            
+           
+             
+
+
+            <button class="memory" onclick="memoryAdd()">M+</button>
+            <button class="memory" onclick="memorySubtract()">M-</button>
+            <button class="memory" onclick="memoryRecall()">MRC</button>
+            <p></p><p class="marka">    KEMOTECH</p> 
+              
+            <button class="number" onclick="appendNumber(7)">7</button>
+            <button class="number" onclick="appendNumber(8)">8</button>
+            <button class="number" onclick="appendNumber(9)">9</button>
+            <button class="operator" onclick="appendOperator('/')">÷</button>
+            <button class="function" onclick="grandTotal()">GT</button> 
+             
+            <button class="number" onclick="appendNumber(4)">4</button>
+            <button class="number" onclick="appendNumber(5)">5</button>
+            <button class="number" onclick="appendNumber(6)">6</button>
+            <button class="operator" onclick="appendOperator('*')">×</button>
+            <button class="function sqrt" onclick="squareRoot()">√</button>
+
+             
+            <button class="number" onclick="appendNumber(1)">1</button>
+            <button class="number" onclick="appendNumber(2)">2</button>
+            <button class="number" onclick="appendNumber(3)">3</button>
+            <button class="operator" onclick="appendOperator('-')">−</button>
+            <button class="function percent" onclick="percent()">%</button>
+            
+
+
+            <button class="number" onclick="appendNumber(0)">0</button>
+            <button class="number oval" onclick="appendNumber('00')">00</button>
+            <button class="number" onclick="appendDecimal()">.</button>
+            <button class="operator large" onclick="appendOperator('+')">+</button>
+            
+            <button class="function equals" onclick="calculate()">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
